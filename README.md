@@ -1,0 +1,6 @@
+GWD238_lab4
+===========
+
+making an image carousel...
+
+shows how to make a simple carousel using HTML and JavaScript...
