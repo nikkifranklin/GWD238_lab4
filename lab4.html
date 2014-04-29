@@ -66,6 +66,14 @@
 		{
 			albums[j].onclick = gallery.changeAlbum;
 		}
+		
+		//hide pic links
+		var divs = document.querySelectorAll('#main div');
+		for(var k=0; k < divs.length; k++)
+		{
+			divs[k].classList.add('hide');
+		}
+			divs[0].classList.remove('hide');
 	},
 
 	
@@ -82,11 +90,15 @@
 	changeAlbum: function(e)
 	{
 		e.preventDefault();
+		
+		//hide all album divs
 		var divs = document.querySelectorAll('#main div');
 		for(var i=0; i < divs.length; i++)
 		{
 			divs[i].classList.add('hide');
 		}
+		
+		//show the selected album
 	}
 	
 }
